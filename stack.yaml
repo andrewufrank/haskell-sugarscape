@@ -15,7 +15,12 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-12.16
+resolver: lts-17.11
+# originally developed with lts-12.16
+# works with 8.6.4: lts-13.19 
+# TODO works with 8.6.5: lts-14.27
+# works with 8.8.4: lts-16.31
+# works with 8.10.4: lts-17.11
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.

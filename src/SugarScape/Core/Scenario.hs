@@ -515,7 +515,7 @@ mkParamsFigureIV_14 = mkParamsFigureIV_3 {
 
 -- NOTE: we didn't implement
 --  Effect of Culturally Varying Preferences, page 124 - 126
---  Externalities and Price Disequilibrium: The effect of Pollution, page 126 - 118
+--  Externalities and Price Disequilibrium: The effect of Pollution, page 126 - 128
 --  On The Evolution of Foresight page 129 / 130
 
 -- page 130-133
