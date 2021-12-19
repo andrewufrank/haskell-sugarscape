@@ -19,6 +19,13 @@ RUNNING FROM COMMAND LINE EXAMPLES (copied from Main.hs - there more detail for 
 - cabal install 
 - sugarscape -s "Animation II-3" -f 1000 -o export/dynamics.m -r 42
 
+The parameters:
+    - f gives the number of steps 
+    - o the name of the output file 
+    - r the RNG Seed
+    
+    What is `--ac Default` or `--sc Resource`
+
 produces a file `export/dynamics.m` (takes time, reports the settings used)
 
 the results can be ploted with octave (perhaps also with mathlab?); install with `sudo apt install octave`
