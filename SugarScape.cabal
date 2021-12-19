@@ -10,13 +10,14 @@ name:                SugarScape
 -- PVP summary:      +-+------- breaking API changes
 --                   | | +----- non-breaking API additions
 --                   | | | +--- code changes with no API change
-version:             0.1.0.0
+version:             0.1.0.1
+-- version for experiments by andrew u frank
 
 -- A short (one-line) description of the package.
--- synopsis:            
+synopsis:   implementation of Epstein and Axtel Sugarspace          
 
 -- A longer description of the package.
--- description:         
+description: A full implementation of Sugarspace (Epstein and Axtel, Growing Artificial Societies, MIT Press, 1996)        
 
 -- The license under which the package is released.
 license:             BSD3
