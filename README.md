@@ -4,7 +4,7 @@ An implementation of the FULL Sugarscape model as published in _Epstein and Axte
 A description of the validation process can be found in `validation_sugarscape.pdf`.
 
 ## Installation using cabal
-Install GHC with `ghcup`. Active (test with `ghcup tui`)
+Install GHC with `ghcup`. The current state can be compiled wtih ctive (test with `ghcup tui`):
 
     GHC   8.10.4          base-4.14.1.0 
 
@@ -13,29 +13,30 @@ Prerequisit:
     apt install libglut1-mesa-dev 
 
 Clone from github and install : 
-    git clone git@github.com:andrewufrank/haskell-sugarscape.git
+    git clone https://github.com/thalerjonathan/haskell-sugarscape.git
     cd haskell-sugarscape
     cabal build 
     cabal install 
 
 ## Running example scenarios from command line
 
-After `cabal install` one can just do 
+After `cabal install` one can run preset scenarios (correspondign to Epstein & Axtel), for example: 
+
     sugarscape -s "Animation II-3" -f 1000 -o export/dynamics.m -r 42
 
-The parameters:
+The parameters are:
 
     - s name of the scenario (check `Main.hs` for what is available)
-    - f gives the number of steps 
+    - f the number of steps 
     - o the name of the output file 
     - r the RNG Seed
 
     <!-- What is `--ac Default` or `--sc Resource` -->
     <!-- what does clear -->
 
-In `Main.hs` are more examples and hints for testing and profiling. 
+In `Main.hs` are more examples for scenarios and hints for testing and profiling. 
 
-Running an example produces reports the settings used and, after a while,  a file e.g. `export/dynamics.m` 
+Running an example writes the settings used to the terminal and, after a while,  produces a file which describe the result, e.g. `export/dynamics.m` 
  
 ### using stack
 - clear & stack exec -- sugarscape -s "Animation II-3" -f 1000 -o export/dynamics.m -r 42
@@ -49,9 +50,10 @@ The results can be plotted with octave;
 <!-- (perhaps also with mathlab?);  -->
 install with `sudo apt install octave`. Then start octave in the `export` directory with `octave` 
 
-On octave's prompt enter:
+On octave's prompt load the result with:
 
-    dynamics (or whatever the filename given with `-o` was) which loads the result  
-    any of the scripts with extension `.m` in `exports`  
+    dynamics 
+
+On the next prompt enter any of the scripts with extension `.m` in `exports`. They produce the desired visualization of the run of the scenario. E.g. 
     
-After the initial loading of the results from the scenario, any script can be used, e.g.   `plotAgeHist` produces a histogram 
+      `plotAgeHist` produces a histogram 
